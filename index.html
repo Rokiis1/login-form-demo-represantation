@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="index.css">
   <title>My First Webpage</title>
 </head>
 <body>
@@ -11,7 +13,7 @@
             <img src="./img-01.webp" alt="image" class="member-login__image">
         </figure>
         <form class="member-login__form">
-            <legend class="member-login__legend">Member Login</legend>
+            <h1 class="member-login__h1">Member Login</h1>
             <label class="member-login__label" for="email-input">
                 <i class="fa-solid fa-envelope member-login__icon"></i>
                 <input type="text" id="email-input" placeholder="Email" aria-label="Email input" aria-describedby="email-description" required class="member-login__input">
@@ -23,10 +25,10 @@
             <button type="submit" class="member-login__button">login</button>
             <p class="member-login__forgot">
                 <span class="member-login__forgot-text">Forgot</span>
-                <a class="member-login__forgot-link">Username / Password?</a>
+                <a class="member-login__forgot-link" href="#">Username / Password?</a>
             </p>
         </form>
-        <p class="member-login__create-account">Create your Account -></p>
+        <a class="member-login__create-account" href="#">Create your Account -></a>
     </section>
 </body>
 </html>

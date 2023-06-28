@@ -1,0 +1,71 @@
+:root {
+    /* Colors */
+    --primary-color: #666;
+    --secondary-color: #57b846;
+    --third-color: #333;
+    --accent-color: #999;
+    --background-color: #9053c7;
+    --input-background-color: #e6e6e6;
+    --default-color: #fff;
+    --alert-color: #c80000;
+}
+
+/* Global Box Sizing */
+/* In addition to resetting the margin, this rule also sets padding: 0 and box-sizing: border-box for all elements, including their ::before and ::after pseudo-elements. This ensures consistent box-sizing behavior and removes any default padding that may be applied by certain elements. */
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: var(--third-color);
+    line-height: 1.2;
+    padding: 0 0 3rem 0;
+}
+
+a, i {
+    color: var(--primary-color);
+}
+
+span {
+    color: var(--accent-color);
+}
+
+input {
+    background-color: var(--input-background-color);
+}
+
+button, h1 {
+    text-align: center;
+}
+
+button {
+    color: var(--default-color);
+    background-color: var(--secondary-color);
+    text-transform: uppercase;
+}
+
+input, button {
+    font-size: 1em;
+    border: none;
+    border-radius: 25px;
+    padding: 1rem 1.8rem 1rem 4.2rem;
+}
+
+ button, a {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+span, a {
+    font-size: 0.8em;
+}
