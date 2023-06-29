@@ -21,6 +21,27 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+}
+
+.member-login {
+    height: 100vh;
+    padding: 0 2.5rem 0 2.5rem;
+    background-color: var(--default-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.member-login__figure {
+    flex: 1;
+}
+  
+  .member-login__form {
+    flex: 1;
 }
 
 h1 {
@@ -39,6 +60,8 @@ span {
 
 input {
     background-color: var(--input-background-color);
+    padding: 1rem 1rem 1rem 3rem;
+    width: calc(100% - 4rem);
 }
 
 button, h1 {
@@ -49,13 +72,14 @@ button {
     color: var(--default-color);
     background-color: var(--secondary-color);
     text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 1rem 1rem 0;
 }
 
 input, button {
     font-size: 1em;
     border: none;
     border-radius: 25px;
-    padding: 1rem 1.8rem 1rem 4.2rem;
 }
 
  button, a {
@@ -69,3 +93,46 @@ a {
 span, a {
     font-size: 0.8em;
 }
+
+.member-login__label {
+    position: relative;
+}
+  
+.member-login__icon {
+    position: absolute;
+    left: 10px;
+}
+      
+.member-login__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.member-login__form > .member-login__create-account {
+    margin: 3rem 0 0 0;
+}
+
+.member-login__icon.fa-envelope {
+    top: 50%;
+    transform: translateY(-50%);
+    transition: left 0.3s; /* Add transition for animation */
+}
+  
+.member-login__icon.fa-lock {
+    top: calc(50%);
+    transform: translateY(-50%);
+}
+
+.member-login__forgot, .member-login__create-account {
+    text-align: center;
+}
+
+/* CSS for tablets and smaller screens */
+@media (max-width: 768px) {
+    .member-login__figure {
+      display: none;
+    }
+}
+  
+  
