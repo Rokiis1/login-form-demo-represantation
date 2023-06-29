@@ -16,19 +16,19 @@
             <h1 class="member-login__h1">Member Login</h1>
             <label class="member-login__label" for="email-input">
                 <i class="fa-solid fa-envelope member-login__icon"></i>
-                <input type="text" id="email-input" placeholder="Email" aria-label="Email input" aria-describedby="email-description" required class="member-login__input">
+                <input type="text" class="member-login__input" id="email-input" placeholder="Email" aria-label="Email input" aria-describedby="email-description" required>
             </label>
             <label class="member-login__label" for="password-input">
                 <i class="fa-solid fa-lock member-login__icon"></i>
-                <input type="password" id="password-input" placeholder="Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" aria-label="Password input" aria-describedby="password-description" required class="member-login__input">
+                <input type="password" class="member-login__input" id="password-input" placeholder="Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" aria-label="Password input" aria-describedby="password-description" required>
             </label>
             <button type="submit" class="member-login__button">login</button>
             <p class="member-login__forgot">
                 <span class="member-login__forgot-text">Forgot</span>
                 <a class="member-login__forgot-link" href="#">Username / Password?</a>
             </p>
+            <a class="member-login__create-account" href="#">Create your Account -></a>
         </form>
-        <a class="member-login__create-account" href="#">Create your Account -></a>
     </section>
 </body>
 </html>
