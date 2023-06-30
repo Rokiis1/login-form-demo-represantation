@@ -12,16 +12,18 @@
         <figure class="member-login__figure">
             <img src="./img-01.webp" alt="image" class="member-login__image">
         </figure>
-        <form class="member-login__form">
+        <form class="member-login__form" onsubmit="return validateForm(event)">
             <h1 class="member-login__h1">Member Login</h1>
             <label class="member-login__label" for="email-input">
                 <i class="fa-solid fa-envelope member-login__icon"></i>
                 <input type="text" class="member-login__input" id="email-input" placeholder="Email" aria-label="Email input" aria-describedby="email-description" required>
             </label>
+            <span id="email-error" class="required"></span>
             <label class="member-login__label" for="password-input">
                 <i class="fa-solid fa-lock member-login__icon"></i>
-                <input type="password" class="member-login__input" id="password-input" placeholder="Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" aria-label="Password input" aria-describedby="password-description" required>
+                <input type="password" class="member-login__input" id="password-input" placeholder="Password" aria-label="Password input" aria-describedby="password-description" required>
             </label>
+            <span id="password-error" class="required"></span>
             <button type="submit" class="member-login__button">login</button>
             <p class="member-login__forgot">
                 <span class="member-login__forgot-text">Forgot</span>
@@ -30,5 +32,6 @@
             <a class="member-login__create-account" href="#">Create your Account -></a>
         </form>
     </section>
+    <script src="index.js" async></script>
 </body>
 </html>
