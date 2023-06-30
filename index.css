@@ -124,7 +124,7 @@ span, a {
 .member-login__form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .member-login__form > .member-login__create-account {
