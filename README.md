@@ -1,4 +1,5 @@
 What you will learn from this paragraph:
+
 *HTML Structure:*
 1. Understanding the basic structure of an HTML.
 2. Understanding the basic structure of an HTML.
@@ -13,13 +14,11 @@ What you will learn from this paragraph:
 7. Applying a regular expression pattern to a password input using the pattern attribute for validation.
 
 *Styling and Classes:*
-
 1. Assigning CSS classes to HTML elements using the class attribute.
 2. Naming CSS classes with appropriate and descriptive names (member-login, member-login__label, etc.).
 3. Using CSS classes to target specific elements for styling or JavaScript interactions.
 
 *Images:*
-
 1. Adding an image to an HTML page using the <img> tag.
 2. Specifying the image source with the src attribute.
 3. Including alternative text for images using the alt attribute for accessibility.
